@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "incremental": true,
+        "lib": ["ES2019"],
+        "strict": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "newLine": "lf",
+        "experimentalDecorators": true,
+        "target": "ES6",
+        "moduleResolution": "Node",
+        "noFallthroughCasesInSwitch": true,
+        "esModuleInterop": false,
+        "listEmittedFiles": true
+    }
+}

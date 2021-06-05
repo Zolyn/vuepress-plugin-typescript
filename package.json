@@ -1,0 +1,49 @@
+{
+    "name": "@zolyn/vuepress-plugin-typescript",
+    "version": "1.0.0",
+    "description": "A fork of vuepress-plugin-typescript",
+    "repository": "https://github.com/Zolyn/vuepress-plugin-typescript",
+    "license": "MIT",
+    "author": "Zorin <zorin1477@gmail.com>",
+    "main": "dist/plugin.js",
+    "scripts": {
+        "clean": "rimraf ./dist",
+        "lint": "eslint ./src/**/*.ts",
+        "format": "prettier --write ./src/**/*.ts",
+        "depend": "dpdm ./src/**/*.ts --warning false",
+        "build": "yarn clean && yarn lint && yarn format && yarn depend && tsc",
+        "rel:ma": "standard-version -r major -n",
+        "rel:mi": "standard-version -r minor -n",
+        "rel:pa": "standard-version -r patch -n",
+        "prerel:a": "standard-version -p alpha -n",
+        "prerel:b": "standard-version -p beta -n",
+        "prerel:r": "standard-version -p rc -n",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "@mr-hope/vuepress-types": "^1.18.0",
+        "rimraf": "^3.0.2",
+        "ts-loader": "8.3.0",
+        "vue-class-component": "^7.2.6",
+        "vue-property-decorator": "^9.1.2"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "12.1.4",
+        "@commitlint/config-conventional": "12.1.4",
+        "@typescript-eslint/eslint-plugin": "4.26.0",
+        "@typescript-eslint/parser": "4.26.0",
+        "@vue/eslint-config-typescript": "^7.0.0",
+        "babel-eslint": "10.1.0",
+        "dpdm": "3.6.1",
+        "eslint": "7.27.0",
+        "eslint-config-alloy": "3.10.0",
+        "eslint-plugin-vue": "7.10.0",
+        "husky": "6.0.0",
+        "lint-staged": "11.0.0",
+        "prettier": "2.3.0",
+        "sort-package-json": "1.50.0",
+        "standard-version": "9.3.0",
+        "typescript": "4.3.2",
+        "vue-eslint-parser": "7.6.0"
+    }
+}
