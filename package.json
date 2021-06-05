@@ -1,11 +1,11 @@
 {
     "name": "@zolyn/vuepress-plugin-typescript",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "A fork of vuepress-plugin-typescript",
     "repository": "https://github.com/Zolyn/vuepress-plugin-typescript",
     "license": "MIT",
     "author": "Zorin <zorin1477@gmail.com>",
-    "main": "dist/plugin.js",
+    "main": "./dist/server/plugin.js",
     "scripts": {
         "clean": "rimraf ./dist",
         "lint": "eslint ./src/**/*.ts",
