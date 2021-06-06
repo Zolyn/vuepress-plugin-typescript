@@ -1,6 +1,6 @@
 {
     "name": "@zolyn/vuepress-plugin-typescript",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A fork of vuepress-plugin-typescript",
     "repository": "https://github.com/Zolyn/vuepress-plugin-typescript",
     "license": "MIT",
