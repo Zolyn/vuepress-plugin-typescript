@@ -53,11 +53,11 @@ const Plugin = ({ enhanceAppFiles: eAppFiles, loaderOptions }, ctx) => ({
             .end()
             .use('ts-loader')
             .loader('ts-loader')
-            .options(Object.assign({ appendTsSuffixTo: [/\.vue$/, /\.md$/], compilerOptions: {
+            .options(Object.assign({ appendTsSuffixTo: [/\.vue$/, /\.md$/], allowTsInNodeModules: true, compilerOptions: {
                 declaration: false,
             } }, loaderOptions))
             .end();
     },
 });
-exports.default = Plugin;
+module.exports = Plugin;
 //# sourceMappingURL=plugin.js.map

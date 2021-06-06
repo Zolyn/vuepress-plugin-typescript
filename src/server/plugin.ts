@@ -63,6 +63,7 @@ const Plugin: PluginFunction<PluginOpts> = ({ enhanceAppFiles: eAppFiles, loader
             .loader('ts-loader')
             .options({
                 appendTsSuffixTo: [/\.vue$/, /\.md$/],
+                allowTsInNodeModules: true,
                 compilerOptions: {
                     declaration: false,
                 },
@@ -72,4 +73,4 @@ const Plugin: PluginFunction<PluginOpts> = ({ enhanceAppFiles: eAppFiles, loader
     },
 });
 
-export default Plugin;
+module.exports = Plugin;
