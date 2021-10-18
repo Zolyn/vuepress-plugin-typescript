@@ -28,8 +28,8 @@
         "vue-property-decorator": "^9.1.2"
     },
     "devDependencies": {
-        "@commitlint/cli": "12.1.4",
-        "@commitlint/config-conventional": "12.1.4",
+        "@commitlint/cli": "13.2.1",
+        "@commitlint/config-conventional": "13.2.0",
         "@typescript-eslint/eslint-plugin": "4.26.0",
         "@typescript-eslint/parser": "4.26.0",
         "@vue/eslint-config-typescript": "7.0.0",
